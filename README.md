@@ -1,4 +1,4 @@
-# Binder for BVCN Transcriptomics lesson $
+# Binder for BVCN Transcriptomics lesson 4
 
 Initially forked from [here](https://github.com/binder-examples/conda). Thank you to the awesome [binder](https://mybinder.org/) team!
 
