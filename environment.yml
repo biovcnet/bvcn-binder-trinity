@@ -7,3 +7,4 @@ dependencies:
   - trinity
   - Cutadapt
   - jellyfish
+  - multiqc
