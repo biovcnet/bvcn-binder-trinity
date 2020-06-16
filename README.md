@@ -11,6 +11,7 @@ This tutorial is a step-by-step guide on how to de novo assemble pared-end RNA r
 ## Recommended knowledge base and/or pre-reading
 
 [Quality Control using FastQC and MultiQC](https://github.com/biovcnet/biovcnet.github.io/wiki/TOPIC%3A-Transcriptomics#lesson-2----rrna-depletion-wet-lab-and-in-silico)
+
 [rRNA depletion](https://github.com/biovcnet/biovcnet.github.io/wiki/TOPIC%3A-Transcriptomics#lesson-2----rrna-depletion-wet-lab-and-in-silico)
 
 
