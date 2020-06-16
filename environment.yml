@@ -4,12 +4,12 @@ channels:
   - bioconda
   - defaults
 dependencies:
-#RNA assembly 
+## RNA assembly 
  - trinity
-#Quality Control
+## Quality Control
   - Cutadapt
   - jellyfish
   - multiqc
-  - fastqc
+  - fastqc=0.11.8
   - sortmerna=2.1b
   - trim-galore=0.6.4
