@@ -11,3 +11,5 @@ dependencies:
   - jellyfish
   - multiqc
   - fastqc
+  - sortmerna=2.1b
+  - trim-galore=0.6.4
