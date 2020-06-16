@@ -1,4 +1,4 @@
-# Binder for BVCN Transcriptomics lesson 4
+# TOPIC-Transcriptomics
 
 Initially forked from [here](https://github.com/binder-examples/conda). Thank you to the awesome [binder](https://mybinder.org/) team!
 
@@ -6,8 +6,12 @@ Initially forked from [here](https://github.com/binder-examples/conda). Thank yo
 
 Part of the [Bioinformatics Virtual Coordination Network](https://biovcnet.github.io/) :)
 
+This tutorial is a step-by-step guide on how to de novo assemble pared-end RNA reads.   
 
-## Walkthrough
+## Recommended knowledge base and/or pre-reading
+
+
+
 
 Command description
 
