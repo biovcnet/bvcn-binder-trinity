@@ -1,4 +1,4 @@
-# TOPIC-Transcriptomics
+# Lesson 4 -- RNA assembly with Trinity
 
 Initially forked from [here](https://github.com/binder-examples/conda). Thank you to the awesome [binder](https://mybinder.org/) team!
 
