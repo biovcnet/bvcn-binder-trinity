@@ -12,3 +12,4 @@ dependencies:
  - sortmerna=2.1b
  - trim-galore=0.6.4
  - rcorrector=1.0.4
+ - python=2.7
