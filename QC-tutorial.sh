@@ -21,6 +21,10 @@ indexdb_rna --ref ./rRNA_databases/silva-bac-16s-id90.fasta,./index/silva-bac-16
 
 cd ../../
 
+#For the paired-end reads within the test data folder named "paired-end-data" we will run a for loop for two files that are appended .fastq
+#RNA_reads.sample.1.fastq
+#RNA_reads.sample.2.fastq
+
 for prefix in `ls *1.fastq | cut -f1,2 -d'.' | sort -u`; do
   echo ${prefix}
   R1=( ${prefix}.1 )
@@ -43,6 +47,7 @@ fastqc unfixrm_${R1}.cor.fq unfixrm_${R2}.cor.fq -o 00_QC_CorrectedReads/
 
 #remove left over sequencing adapters and low quality reads
 trim_galore --paired --retain_unpaired --phred33 --output_dir 01_TrimmedReads --length 36 -q 5 --stringency 1 -e 0.1 unfixrm_${R1}.cor.fq unfixrm_${R2}.cor.fq
+
 fastqc 01_TrimmedReads/unfixrm_${R1}.cor_val_1.fq 01_TrimmedReads/unfixrm_${R2}.cor_val_2.fq -o 00_QC_TrimmedReads/
 
 #Merge the paired-end reads for sortMeRNA
