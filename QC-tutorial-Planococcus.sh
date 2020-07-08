@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## Before we start ##
 #We are going to clone a collection of scripts from Adam Freedmans github as well as the sortmerna rRNA databases which we have to index
 
@@ -66,6 +68,14 @@ sortmerna/data/rRNA_databases/rfam-5.8s-database-id98.fasta,sortmerna/data/index
 sortmerna/data/rRNA_databases/rfam-5s-database-id98.fasta,sortmerna/data/index/rfam-5s-db \
 --paired_in --fastx --aligned 02_SortMeRNA/${prefix}_rRNA \
 --other 02_SortMeRNA/${prefix}_non_rRNA -m 4096 --log
+
+
+unmerge-paired-reads.sh 02_SortMeRNA/${prefix}_non_rRNA 03_Assembly/${prefix}_R1.fq 03_Assembly/${prefix}_R2.fq
+
+cd 03_Assembly
+mkdir Trinity
+
+Trinity --seqType fq --left ${prefix}_R1.fq --right ${prefix}_R2.fq --CPU 6 --max_memory 20G 
 
 
 done
