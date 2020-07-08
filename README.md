@@ -17,4 +17,9 @@ This tutorial is a step-by-step guide on how to de novo assemble pared-end RNA r
 ## About this tutorial 
 This tutorial will take you through the general advice provided on the [Best practices for de novo transcriptome assembly with Trinity](https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html) and show you how to assemble these quality trimmed and corrected reads with the de novo RNA assembler [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki)
 
+We have provided two subsampled datasets from the following studies:
+1. Sieradzki, E., Ignacio-Espinoza, J.C., Needham, D. et al. Dynamic marine viral infections and major contribution to photosynthetic processes shown by spatiotemporal picoplankton metatranscriptomes. Nat Commun 10, 1169 (2019). https://doi.org/10.1038/s41467-019-09106-z
+
+2. RNA-seq of Planococcus citri female whole body https://www.ncbi.nlm.nih.gov/sra/SRX7867216[accn]
+
 The binder may take some time to load
