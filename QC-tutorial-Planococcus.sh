@@ -36,6 +36,7 @@ mkdir 00_QC_TrimmedReads
 mkdir 00_QC_CorrectedReads
 mkdir 01_TrimmedReads
 mkdir 02_SortMeRNA
+mkdir 03_Assembly
 
 #Check the quality of the sequenced reads
 fastqc ${R1}.fastq ${R2}.fastq -o 00_QC_RawReads/
@@ -49,7 +50,6 @@ fastqc unfixrm_${R1}.cor.fq unfixrm_${R2}.cor.fq -o 00_QC_CorrectedReads/
 
 #remove left over sequencing adapters and low quality reads
 trim_galore --paired --retain_unpaired --phred33 --output_dir 01_TrimmedReads --length 36 -q 5 --stringency 1 -e 0.1 unfixrm_${R1}.cor.fq unfixrm_${R2}.cor.fq
-
 fastqc 01_TrimmedReads/unfixrm_${R1}.cor_val_1.fq 01_TrimmedReads/unfixrm_${R2}.cor_val_2.fq -o 00_QC_TrimmedReads/
 
 #Merge the paired-end reads for sortMeRNA
@@ -69,14 +69,12 @@ sortmerna/data/rRNA_databases/rfam-5s-database-id98.fasta,sortmerna/data/index/r
 --paired_in --fastx --aligned 02_SortMeRNA/${prefix}_rRNA \
 --other 02_SortMeRNA/${prefix}_non_rRNA -m 4096 --log
 
-
-unmerge-paired-reads.sh 02_SortMeRNA/${prefix}_non_rRNA 03_Assembly/${prefix}_R1.fq 03_Assembly/${prefix}_R2.fq
+unmerge-paired-reads.sh 02_SortMeRNA/${prefix}_non_rRNA.fq 03_Assembly/${prefix}_R1.fq 03_Assembly/${prefix}_R2.fq
 
 cd 03_Assembly
 mkdir Trinity
 
 Trinity --seqType fq --left ${prefix}_R1.fq --right ${prefix}_R2.fq --CPU 6 --max_memory 20G 
-
 
 done
 
