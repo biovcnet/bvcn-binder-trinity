@@ -3,6 +3,7 @@
 Initially forked from [here](https://github.com/binder-examples/conda). Thank you to the awesome [binder](https://mybinder.org/) team!
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexismarshall/bvcn-binder-trinity/master?urlpath=lab)
+The binder may take some time to load ~5-10 min
 
 Part of the [Bioinformatics Virtual Coordination Network](https://biovcnet.github.io/) :)
 
@@ -22,4 +23,3 @@ We have provided two subsampled datasets from the following studies:
 
 2. RNA-seq of Planococcus citri female whole body https://www.ncbi.nlm.nih.gov/sra/SRX7867216[accn]
 
-The binder may take some time to load
