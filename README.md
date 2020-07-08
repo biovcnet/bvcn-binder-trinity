@@ -14,25 +14,7 @@ This tutorial is a step-by-step guide on how to de novo assemble pared-end RNA r
 
 [rRNA depletion](https://github.com/biovcnet/biovcnet.github.io/wiki/TOPIC%3A-Transcriptomics#lesson-2----rrna-depletion-wet-lab-and-in-silico)
 
-This tutorial will take you through the general advice provided on the [Best practices for de novo transcriptome assembly with Trinity](https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html)
+## About this tutorial 
+This tutorial will take you through the general advice provided on the [Best practices for de novo transcriptome assembly with Trinity](https://informatics.fas.harvard.edu/best-practices-for-de-novo-transcriptome-assembly-with-trinity.html) and show you how to assemble these quality trimmed and corrected reads with the de no RNA assembler [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki)
 
-
-Command description
-
-    command
-
-Command description
-
-    command
-
-Command description
-
-    command
-
-Command description
-
-    command
-
-Command description
-
-    command
+The binder may take some time to load
