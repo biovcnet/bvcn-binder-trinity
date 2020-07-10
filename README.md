@@ -27,3 +27,4 @@ We have provided two subsampled datasets from the following studies:
    
    For more information see the following [MicroSeminar talk](https://www.youtube.com/watch?v=sG5qWK_9sf8&t=5s)
 
+These two datasets represent vastly different ecosystems and are both provided to demonstrate the different challenges between de novo assembly of single organisms or more "simple" communities (2) verses de novo assembly of a metatranscriptome from more "complex" community assemblages (1).
