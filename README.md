@@ -23,5 +23,5 @@ We have provided two subsampled datasets from the following studies:
 
 2. Husnik F, Nikoh N, Koga R, et al. Horizontal gene transfer from diverse bacteria to an insect genome enables a tripartite nested mealybug symbiosis. Cell. 2013;153(7):1567-1578. doi:10.1016/j.cell.2013.05.040 Total dataset is available here https://www.ncbi.nlm.nih.gov/sra/SRX7867216[accn] 
 
-For more information see the following [MicroSeminar talk](https://www.youtube.com/watch?v=sG5qWK_9sf8&t=5s)
+   For more information see the following [MicroSeminar talk](https://www.youtube.com/watch?v=sG5qWK_9sf8&t=5s)
 
