@@ -16,10 +16,10 @@
 
 cd data/paired-end-data/
 mkdir Programs
-
+cd Programs/
 git clone https://github.com/harvardinformatics/TranscriptomeAssemblyTools.git
 git clone https://github.com/biocore/sortmerna.git
-cd Programs/sortmerna/data/
+cd sortmerna/data/
 mkdir index
 indexdb_rna --ref ./rRNA_databases/silva-bac-16s-id90.fasta,./index/silva-bac-16s-db:\
 ./rRNA_databases/silva-bac-23s-id98.fasta,./index/silva-bac-23s-db:\
