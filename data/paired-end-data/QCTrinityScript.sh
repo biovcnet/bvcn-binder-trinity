@@ -15,7 +15,7 @@ fastqc ${R1}.fastq ${R2}.fastq -o 00_QC_RawReads/
 echo Moving to rcorrector
 
 #run rcorrector to identify and correct errors
-run_rcorrector.pl -t 70 -1 ${R1}.fastq -2 ${R2}.fastq -od 00_QC_CorrectedReads
+run_rcorrector.pl -1 ${R1}.fastq -2 ${R2}.fastq -od 00_QC_CorrectedReads
 
 echo Removing "uncorrectable reads" using FilterUncorrectabledPEfastq.py script from TranscriptomeAssemblyTools.git 
 
@@ -56,7 +56,7 @@ Programs/sortmerna/data/rRNA_databases/silva-euk-28s-id98.fasta,Programs/sortmer
 Programs/sortmerna/data/rRNA_databases/rfam-5.8s-database-id98.fasta,Programs/sortmerna/data/index/rfam-5.8s-db:\
 Programs/sortmerna/data/rRNA_databases/rfam-5s-database-id98.fasta,Programs/sortmerna/data/index/rfam-5s-db \
 --paired_in --fastx --aligned 02_SortMeRNA/${prefix}_rRNA \
---other 02_SortMeRNA/${prefix}_non_rRNA -m 4096 --log
+--other 02_SortMeRNA/${prefix}_non_rRNA --log
 
 echo Unmerge reads for SortMeRNA
 
