@@ -70,7 +70,7 @@ fastqc 03_Assembly/${prefix}_R1.fq 03_Assembly/${prefix}_R2.fq -o 03_Assembly
 multiqc -d -s 0*
 
 cd 03_Assembly
-Trinity --seqType fq --left ${prefix}_R1.fq --right ${prefix}_R2.fq --CPU 6 --max_memory 20G 
+Trinity --seqType fq --left ${prefix}_R1.fq --right ${prefix}_R2.fq --max_memory 1G 
 
 $TRINITY_HOME/util/TrinityStats.pl  trinity_out_dir/Trinity.fasta
 
