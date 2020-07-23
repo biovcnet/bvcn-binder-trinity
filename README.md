@@ -2,7 +2,7 @@
 
 Initially forked from [here](https://github.com/binder-examples/conda). Thank you to the awesome [binder](https://mybinder.org/) team!
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexismarshall/bvcn-binder-trinity/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://gesis.mybinder.org/v2/gh/alexismarshall/bvcn-binder-trinity/master?urlpath=lab)
 Click the Binder Badge to start. This binder may take some time to load ~5-10 min
 
 Part of the [Bioinformatics Virtual Coordination Network](https://biovcnet.github.io/) :)
