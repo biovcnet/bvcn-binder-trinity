@@ -1,0 +1,41 @@
+
+#A binder environment has been created for this BVCN tutorial with the following dependencies loaded:
+
+# multiqc - https://multiqc.info/
+# fastqc=0.11.8 - https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+# sortmerna=2.1b -https://bioinfo.lifl.fr/RNA/sortmerna/
+# Cutadapt - https://cutadapt.readthedocs.io/en/stable/
+# trim-galore=0.6.4 - https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
+# jellyfish - http://www.genome.umd.edu/jellyfish.html
+# rcorrector=1.0.4 - https://github.com/mourisl/Rcorrector
+# trinity - https://github.com/trinityrnaseq/trinityrnaseq/wiki
+
+
+# Before we start we are going to clone a collection of scripts from Adam Freedmans github as well as the SortMeRNA rRNA databases which we have to index
+#See SortMeRNA manual https://bioinfo.lifl.fr/RNA/sortmerna/code/SortMeRNA-user-manual-v2.0.pdf
+
+cd data/paired-end-data/
+mkdir Programs
+cd Programs/
+git clone https://github.com/harvardinformatics/TranscriptomeAssemblyTools.git
+git clone https://github.com/biocore/sortmerna.git
+cd sortmerna/data/
+mkdir index
+indexdb_rna --ref ./rRNA_databases/silva-bac-16s-id90.fasta,./index/silva-bac-16s-db:\
+./rRNA_databases/silva-bac-23s-id98.fasta,./index/silva-bac-23s-db:\
+./rRNA_databases/silva-arc-16s-id95.fasta,./index/silva-arc-16s-db:\
+./rRNA_databases/silva-arc-23s-id98.fasta,./index/silva-arc-23s-db:\
+./rRNA_databases/silva-euk-18s-id95.fasta,./index/silva-euk-18s-db:\
+./rRNA_databases/silva-euk-28s-id98.fasta,./index/silva-euk-28s:\
+./rRNA_databases/rfam-5s-database-id98.fasta,./index/rfam-5s-db:\
+./rRNA_databases/rfam-5.8s-database-id98.fasta,./index/rfam-5.8s-db
+
+
+cd ../../../
+
+mkdir 00_QC_RawReads
+mkdir 00_QC_TrimmedReads
+mkdir 00_QC_CorrectedReads
+mkdir 01_TrimmedReads
+mkdir 02_SortMeRNA
+mkdir 03_Assembly

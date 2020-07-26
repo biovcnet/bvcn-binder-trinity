@@ -1,4 +1,4 @@
-name: env-name-here-does-not-matter
+name: BVCN-Trinity-Assembly-required-programs-for-Binder
 channels:
   - conda-forge
   - bioconda
